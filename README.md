@@ -32,13 +32,13 @@ be informed and prompted to rewrite them.
 All of the dates you will be asked to provide need to be in the {DD.MM.YYYY HH:MM} format (example: 01.01.2023 10:00).
 
 Making a reservation fails if:
-    * User has more than 2 reservations already this week
-    * The date user gives is less than one hour from now
+  - User has more than 2 reservations already this week
+  - The date user gives is less than one hour from now
 If the court is already reserved for specified time, the system will attempt to propose a different time, but this will also fail
 if there won't be any time available left for the given day.
 
 Cancelling a reservation fails if:
-    * There is no reservation for this user on specified date
-    * The date user gives is less than one hour from now
+  - There is no reservation for this user on specified date
+  - The date user gives is less than one hour from now
 
 ###### Filip Zygmuntowicz 2023
