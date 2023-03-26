@@ -43,8 +43,11 @@ class Court:
                     print(printable)
 
 #   used to find the closest time to the one given in start_time
-#   that is not reserved
-    def find_closest_available_time(self, date, start_time):
+#   that is not reserved, works properly only if start_time is
+#   not available
+    def find_closest_available_time(self, start_time):
+        date = start_time.replace(
+            hour=0, minute=0, second=0, microsecond=0)
         date_reservations = self.reservations[date]
         date_reservations = sorted(
             date_reservations, key=lambda reservation: reservation.end_time)
@@ -175,7 +178,7 @@ class Court:
         available_durations = self.get_available_durations(start_time)
         if available_durations == []:
             closest_available_time_object = self.find_closest_available_time(
-                date, start_time)
+                start_time)
             if closest_available_time_object is False:
                 print(
                     "The court is fully booked for the entire day on and after the specified hour. Please choose another day or an earlier hour.")

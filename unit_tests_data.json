@@ -1,3 +1,4 @@
+
 {"01.04.2023": [{
   "name": "Michał Najman",
   "start_time": "14:00",
@@ -33,6 +34,26 @@
   "name": "Klaus Sevkovic",
   "start_time": "14:00",
   "end_time": "14:30"
+},
+{
+  "name": "Test User1",
+  "start_time": "14:00",
+  "end_time": "16:30"
+},
+{
+  "name": "Test User2",
+  "start_time": "16:30",
+  "end_time": "19:30"
+},
+{
+  "name": "Test User3",
+  "start_time": "19:30",
+  "end_time": "21:30"
+},
+{
+  "name": "Test User4",
+  "start_time": "21:30",
+  "end_time": "23:30"
 }],
     "26.03.2023": [{
   "name": "Paweł Gulczyński",
