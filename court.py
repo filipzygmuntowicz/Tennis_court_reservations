@@ -259,7 +259,7 @@ class Court:
                             str(reservation.end_time.minute).zfill(2))
                     })
         with open('{}.json'.format(filename), 'w', encoding="utf8") as outfile:
-            dump(dict_to_dump, outfile)
+            dump(dict_to_dump, outfile, ensure_ascii=False)
 
 #   saves the scheduled reservations from the given time range in a csv file
     def save_schedule_to_csv(self, filename, start_time, end_time):
